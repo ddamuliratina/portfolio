@@ -56,7 +56,6 @@ div.intro {
 
 div.intro p.header {
     font-size: 6rem;
-    /* font-weight: bold; */
 }
 
 div.intro p.sub {
@@ -157,4 +156,63 @@ div.image {
     width: 100%;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+
+@media (max-width: 767px) {
+
+    div.navbar {
+        height: 8%;
+        padding-bottom: 2.5rem;
+        border-bottom: 2px solid #912543;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
+
+    div.image {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        margin-top: 0.5rem;
+        border-radius: 50%;
+        height: 25rem;
+        width: 25rem;
+        align-self: top;
+        justify-self: center;
+    }
+
+    div.main {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        height: auto;
+    }
+
+    div.line {
+        display: none;
+    }
+
+    div.intro {
+        margin-left: 5rem;
+    }
+
+    div.intro p.header {
+        font-size: 4rem;
+    }
+
+    div.resume {
+        margin-left: 5rem;;
+    }
+
+    div.bio {
+        margin-left: 5rem;
+    }
+
+    div.contacts {
+        position: static;
+        margin-top: 2rem;
+        width: 100%;
+        padding-left: 5rem;
+    }
 }
